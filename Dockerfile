@@ -13,5 +13,7 @@ RUN sudo apt-get update \
    libxtst6 \
    xauth \
    xvfb \
- && sudo rm -rf /var/lib/apt/lists/*
+ && sudo rm -rf /var/lib/apt/lists/* && sudo add-apt-repository ppa:mozillateam/ppa && sudo apt install firefox-esr 
+
+
  

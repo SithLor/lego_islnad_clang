@@ -1,0 +1,243 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      The system is: Linux - 6.5.0-1021-azure - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/clang-cl-17 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /usr/bin/ld: Error: unable to disambiguate: -nologo (did you mean --nologo ?)
+      clang-cl-17: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang-cl-17 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is Clang, found in:
+        /workspaces/lego_islnad_clang/build/CMakeFiles/3.29.2/CompilerIdCXX/CMakeCXXCompilerId.obj
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1216 (message)"
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        Note: including file: ./foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/workspaces/lego_islnad_clang/build/CMakeFiles/CMakeScratch/TryCompile-51Fvby"
+      binary: "/workspaces/lego_islnad_clang/build/CMakeFiles/CMakeScratch/TryCompile-51Fvby"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-17"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/lego_islnad_clang/build/CMakeFiles/CMakeScratch/TryCompile-51Fvby'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_0a5d3
+        [1/2] /usr/bin/clang-cl-17    -o CMakeFiles/cmTC_0a5d3.dir/CMakeCXXCompilerABI.cpp.o -c /home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        [2/2] : && /usr/bin/clang-cl-17  -Wl,-v CMakeFiles/cmTC_0a5d3.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0a5d3   && :
+        FAILED: cmTC_0a5d3 
+        : && /usr/bin/clang-cl-17  -Wl,-v CMakeFiles/cmTC_0a5d3.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0a5d3   && :
+        /usr/bin/ld: Error: unable to disambiguate: -nologo (did you mean --nologo ?)
+        clang-cl-17: error: linker command failed with exit code 1 (use -v to see invocation)
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Check for working CXX compiler: /usr/bin/clang-cl-17"
+    directories:
+      source: "/workspaces/lego_islnad_clang/build/CMakeFiles/CMakeScratch/TryCompile-WcxuRJ"
+      binary: "/workspaces/lego_islnad_clang/build/CMakeFiles/CMakeScratch/TryCompile-WcxuRJ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-17"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/lego_islnad_clang/build/CMakeFiles/CMakeScratch/TryCompile-WcxuRJ'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_628f1
+        [1/2] /usr/bin/clang-cl-17    -o CMakeFiles/cmTC_628f1.dir/testCXXCompiler.cxx.o -c /workspaces/lego_islnad_clang/build/CMakeFiles/CMakeScratch/TryCompile-WcxuRJ/testCXXCompiler.cxx
+        FAILED: CMakeFiles/cmTC_628f1.dir/testCXXCompiler.cxx.o 
+        /usr/bin/clang-cl-17    -o CMakeFiles/cmTC_628f1.dir/testCXXCompiler.cxx.o -c /workspaces/lego_islnad_clang/build/CMakeFiles/CMakeScratch/TryCompile-WcxuRJ/testCXXCompiler.cxx
+        clang-cl-17: error: no input files
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/clang-cl-17 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /usr/bin/ld: Error: unable to disambiguate: -nologo (did you mean --nologo ?)
+      clang-cl-17: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang-cl-17 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is Clang, found in:
+        /workspaces/lego_islnad_clang/build/CMakeFiles/3.29.2/CompilerIdCXX/CMakeCXXCompilerId.obj
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1216 (message)"
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        Note: including file: ./foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/workspaces/lego_islnad_clang/build/CMakeFiles/CMakeScratch/TryCompile-ahqhaO"
+      binary: "/workspaces/lego_islnad_clang/build/CMakeFiles/CMakeScratch/TryCompile-ahqhaO"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-17"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/lego_islnad_clang/build/CMakeFiles/CMakeScratch/TryCompile-ahqhaO'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_8becd
+        [1/2] /usr/bin/clang-cl-17    -o CMakeFiles/cmTC_8becd.dir/CMakeCXXCompilerABI.cpp.o -c /home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        [2/2] : && /usr/bin/clang-cl-17  -Wl,-v CMakeFiles/cmTC_8becd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8becd   && :
+        FAILED: cmTC_8becd 
+        : && /usr/bin/clang-cl-17  -Wl,-v CMakeFiles/cmTC_8becd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8becd   && :
+        /usr/bin/ld: Error: unable to disambiguate: -nologo (did you mean --nologo ?)
+        clang-cl-17: error: linker command failed with exit code 1 (use -v to see invocation)
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.29.2/share/cmake/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Check for working CXX compiler: /usr/bin/clang-cl-17"
+    directories:
+      source: "/workspaces/lego_islnad_clang/build/CMakeFiles/CMakeScratch/TryCompile-GCBEjK"
+      binary: "/workspaces/lego_islnad_clang/build/CMakeFiles/CMakeScratch/TryCompile-GCBEjK"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-17"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/lego_islnad_clang/build/CMakeFiles/CMakeScratch/TryCompile-GCBEjK'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_4c0a0
+        [1/2] /usr/bin/clang-cl-17    -o CMakeFiles/cmTC_4c0a0.dir/testCXXCompiler.cxx.o -c /workspaces/lego_islnad_clang/build/CMakeFiles/CMakeScratch/TryCompile-GCBEjK/testCXXCompiler.cxx
+        FAILED: CMakeFiles/cmTC_4c0a0.dir/testCXXCompiler.cxx.o 
+        /usr/bin/clang-cl-17    -o CMakeFiles/cmTC_4c0a0.dir/testCXXCompiler.cxx.o -c /workspaces/lego_islnad_clang/build/CMakeFiles/CMakeScratch/TryCompile-GCBEjK/testCXXCompiler.cxx
+        clang-cl-17: error: no input files
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...

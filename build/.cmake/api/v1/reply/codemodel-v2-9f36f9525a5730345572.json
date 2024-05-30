@@ -1,0 +1,177 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "isle",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "3dmanager::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-3dmanager-Debug-599f20b0d5b2e7669045.json",
+					"name" : "3dmanager",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "anim::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-anim-Debug-e6b9b253f85bacf4d1fc.json",
+					"name" : "anim",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "clang-format::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-clang-format-Debug-50cde32e76b5c5860a5a.json",
+					"name" : "clang-format",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "config::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-config-Debug-25f7391d166ca38b8e2d.json",
+					"name" : "config",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "geom::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-geom-Debug-785bf49d1dbf8de8a925.json",
+					"name" : "geom",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "isle::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-isle-Debug-ef4dee7877ab6abe3b18.json",
+					"name" : "isle",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lego1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lego1-Debug-4cbb59236ec841788d90.json",
+					"name" : "lego1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "misc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-misc-Debug-72b742abd29417f051a9.json",
+					"name" : "misc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mxdirectx::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mxdirectx-Debug-80f29585962981016a50.json",
+					"name" : "mxdirectx",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "omni::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-omni-Debug-14ba4aea9226ee9ec973.json",
+					"name" : "omni",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realtime::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realtime-Debug-350d1ae5f87b96fb2df4.json",
+					"name" : "realtime",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roi-Debug-fe167a9dd59e88291646.json",
+					"name" : "roi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tglrl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tglrl-Debug-c079d41d80fcacd757fd.json",
+					"name" : "tglrl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "viewmanager::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-viewmanager-Debug-6c3f8580a156ae0c1392.json",
+					"name" : "viewmanager",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspaces/lego_islnad_clang/build",
+		"source" : "/workspaces/lego_islnad_clang/isle"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
